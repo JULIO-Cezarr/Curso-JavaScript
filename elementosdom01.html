@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemetos Dom</title>
+    <style>
+        /* Aula 10 Time: 28:54 Eventos DOM */
+        /* Eevntos é tudo aquilo que pode acontecer com div ex: Eventos
+         mouseenter, mousemove, mousedown mouseup, click mouseout */
+         /* Função é um conjunto de linhas que só executadas quando o evento ocorrer {Bloco}.
+          Os comandos só são realizados depois de ação function{} */
+
+        div#area{
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- function Time 16:00 -->
+    <!-- Função ondblclick = Clicar -->
+    <!-- Função onmouseenter = entrar-->
+    <!-- Função onmouseout  = Sair -->
+
+    <div id="area" ondblclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interja...
+    </div>
+    <script>
+        var a = window.document.getElementById( 'area')
+        function clicar(){
+            a.innerText = 'Clicou!!!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'Entrou!!!'
+        }
+        function sair(){
+            a.innerText = 'Saiu!!!'
+            a.style.background = 'green'
+        }
+    </script>
+    
+</body>
+</html>
